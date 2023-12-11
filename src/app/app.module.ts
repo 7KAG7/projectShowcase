@@ -5,16 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { MatDrawerMode } from '@angular/material/sidenav'; // Import MatDrawerMode instead of MatDrawerModule
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSidenavModule } from '@angular/material/sidenav'; // Import MatSidenavModule
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSidenavModule, 
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -30,4 +30,5 @@ notes:
 --bring external pictures local to the repo
 --change the background opacity
 --youtube embed needs fixing
---replace 
+--programatically open/close side nave down to icons
+
