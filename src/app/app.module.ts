@@ -8,13 +8,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatDrawerMode } from '@angular/material/sidenav'; // Import MatDrawerMode instead of MatDrawerModule
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { MatSidenavModule } from '@angular/material/sidenav'; // Import MatSidenavModule
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { GmailCardComponent } from './gmail-card/gmail-card.component'; // Import MatSidenavModule
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent
+    SideNavComponent,
+    GmailCardComponent
   ],
   imports: [
     BrowserModule,
