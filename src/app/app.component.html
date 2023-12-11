@@ -1,28 +1,3 @@
-<!-- Background -->
-<div>
-<style>
- .content {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-    }
-
-    .content::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: url("https://i.pinimg.com/originals/a0/18/f5/a018f5da61dfe75fbc3a997bc6f6cb9f.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.5; /* Adjust as needed */
-      z-index: -1;
-    }
-</style>
-
  
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
@@ -46,57 +21,27 @@
     </svg>
   </a>
 </div>
-
-<div class="content" role="main">
-
-  <!-- to-be put in left nav -->
-  <div class="left-nav">
-    <div class="angular-links">
-      <a href="https://angular.io/docs" target="_blank" rel="noopener">
-        <img width="40" alt="Angular Logo" src="https://angular.io/assets/images/logos/angular/angular.svg" />
-      </a>
-      <a href="https://material.angular.io/" target="_blank" rel="noopener">
-        <img width="40" alt="Angular Material Logo"
-          src="https://material.angular.io/assets/img/angular-material-logo.svg" />
-      </a>
+<mat-drawer-container>
+  <mat-drawer mode="side" opened>
+    <div class="side-nav">
+    <app-side-nav></app-side-nav>
+    <mat-slide-toggle class="nav-slider">Slide me!</mat-slide-toggle>
     </div>
-    <div class="react-links">
-      <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">
-        <img width="40" alt="React Logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
-      </a>
-      <a href="https://material-ui.com/" target="_blank" rel="noopener">
-        <img width="40" alt="Material UI Logo" src="https://material-ui.com/static/logo_raw.svg" />
-      </a>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="content" role="main">
+      <!-- Main Content -->
+      <!-- YouTube Video -->
+      <div class="youtube-video" style="float: right;">
+        <iframe width="460" height="215" src="https://www.youtube.com/embed" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- weather map -->
+      <div class="weather-map-window" style="float: left;">
+        <iframe
+          src="https://www.rainviewer.com/map.html?loc=37.44,-97.2729,5&oFa=0&oC=0&oU=0&oCS=1&oF=0&oAP=0&c=3&o=83&lm=1&layer=radar&sm=1&sn=1&hu=false"
+          width="460" height="215" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-
-  </div>
-  <!-- YouTube Video -->
-  <div class="youtube-video" style="float: right;">
-    <iframe width="460" height="215" src="https://www.youtube.com/embed" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <!-- weather map -->
-  <div class="weather-map-window" style="float: left;">
-    <iframe
-      src="https://www.rainviewer.com/map.html?loc=37.44,-97.2729,5&oFa=0&oC=0&oU=0&oCS=1&oF=0&oAP=0&c=3&o=83&lm=1&layer=radar&sm=1&sn=1&hu=false"
-      width="460" height="215" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-
-    <!-- Love Angular?&nbsp;
-      <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
-        <div class="github-star-badge">
-            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-          Star
-        </div>
-      </a>
-      <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-      </a> -->
-  </footer>
-
-</div>
-
+  </mat-drawer-content>
+</mat-drawer-container>
 <router-outlet></router-outlet>
