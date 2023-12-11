@@ -1,8 +1,9 @@
 li {
     list-style-type: none;
-    padding: 10px 0;
+    padding: 10px 10px;
     margin: 0;
-    border-bottom: 1px solid #ccc;
+    border: 1px;
+    margin-left: 1px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     display: flex;
@@ -25,3 +26,7 @@ h3 {
     font-weight: 400;
 }
     
+ul {
+    padding: 0;
+    margin: 0;
+}
