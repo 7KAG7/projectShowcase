@@ -29,4 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 notes: 
 --bring external pictures local to the repo
 --change the background opacity
-
+--youtube embed needs fixing
+--replace 
