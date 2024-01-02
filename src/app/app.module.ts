@@ -8,13 +8,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatDrawerMode } from '@angular/material/sidenav'; // Import MatDrawerMode instead of MatDrawerModule
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { MatSidenavModule } from '@angular/material/sidenav'; // Import MatSidenavModule
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { TodoListComponent } from './todo-list/todo-list.component'; // Import MatSidenavModule
+import { MatCheckboxModule } from '@angular/material/checkbox'; // Import MatCheckboxModule
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent
+    SideNavComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { MatSidenavModule } from '@angular/material/sidenav'; // Import MatSiden
     BrowserAnimationsModule,
     MatGridListModule,
     MatSidenavModule, 
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
