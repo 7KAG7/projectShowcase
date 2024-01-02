@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @Component({
   selector: 'app-root',
