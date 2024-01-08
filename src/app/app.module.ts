@@ -10,14 +10,17 @@ import { MatDrawerMode } from '@angular/material/sidenav'; // Import MatDrawerMo
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { TodoListComponent } from './todo-list/todo-list.component'; // Import MatSidenavModule
-import { MatCheckboxModule } from '@angular/material/checkbox'; // Import MatCheckboxModule
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RssFeedComponent } from './rss-feed/rss-feed.component'; // Import MatCheckboxModule
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
-    TodoListComponent
+    TodoListComponent,
+    RssFeedComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox'; // Import MatChe
     MatGridListModule,
     MatSidenavModule, 
     MatSlideToggleModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

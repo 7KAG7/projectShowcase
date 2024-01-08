@@ -1,0 +1,10 @@
+<div class="main">
+    <h1>RSS Feed Data</h1>
+    <div *ngFor="let item of rssFeedItems"> 
+        
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <a href="{{item.link}}">Read More</a>
+
+    </div>
+</div>
