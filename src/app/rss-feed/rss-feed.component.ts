@@ -15,11 +15,7 @@ export class RssFeedComponent implements OnInit {
     private http: HttpClient) { }
 
   ngOnInit(): void {
-    // hit the rss feed api
-    // get the data
-    // display the data
     this.getFeedData();
-    console.log(this.rssFeedItems);
   }
 
   getFeedData() {  

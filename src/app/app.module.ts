@@ -13,7 +13,7 @@ import { TodoListComponent } from './todo-list/todo-list.component'; // Import M
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { RssFeedComponent } from './rss-feed/rss-feed.component'; // Import MatCheckboxModule
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule, 
     MatSlideToggleModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
