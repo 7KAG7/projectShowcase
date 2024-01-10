@@ -1,8 +1,11 @@
-<div class="left-nav" [@shrinkSideNav]="isSideNavShrunk ? 'shrunk' : 'default'">
+<div 
+  class="left-nav"
+  [ngClass]="{'default': !isShrunk, 'shrunk': isShrunk}"
+  [@shrinkAnimation]="isShrunk ? 'shrunk' : 'default'">
     <h2 class="description">This side nav is used with a Mat-Drawer using angular material</h2>
     <ul>
         <li>
-                <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="take me to YouTube" title="YouTube">
+            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="take me to YouTube" title="YouTube">
                 <svg class="icon-only" id="youtube-logo" height="40" width="40" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0V0z" fill="none" />
@@ -68,5 +71,5 @@
             </li>
         </a>
     </ul>
-    <mat-slide-toggle class="nav-slider"  (change)="toggleSideNav()">Slide me!</mat-slide-toggle>
+    <mat-slide-toggle class="nav-slider"  (change)="toggleShrunk()">Slide me!</mat-slide-toggle>
 </div>

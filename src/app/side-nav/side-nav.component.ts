@@ -14,19 +14,19 @@ import { Component, OnInit } from '@angular/core';
       state('shrunk', style({
         width: '80px', // Set your shrunk width
       })),
-      transition('default => shrunk, shrunk => default', animate('0.3s ease-in-out')),
+      transition('default <=> shrunk', animate('300ms ease-in-out'))
     ]),
   ],
 })
 export class SideNavComponent implements OnInit {
-  isSideNavShrunk: boolean = false;
+  isShrunk = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
   
-  toggleSideNav() {
-    this.isSideNavShrunk = !this.isSideNavShrunk;
+  toggleShrunk() {
+    this.isShrunk = !this.isShrunk;
   }
 }

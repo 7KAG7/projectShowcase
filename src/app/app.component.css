@@ -296,8 +296,8 @@
   .content {
     display: flex;
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
     padding: 26px;
     flex-direction: column;
   }
