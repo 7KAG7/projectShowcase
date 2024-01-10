@@ -289,7 +289,7 @@
   .side-nav {
     height: 100%;
     padding: 10px;
-    width: auto;
+    width: 200px;
     flex-direction: row;
     order: -1; /* Move the side-nav to the left */
   }
