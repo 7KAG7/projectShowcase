@@ -12,18 +12,14 @@
   <mat-drawer mode="side" opened>
     <div class="side-nav">
     <app-side-nav></app-side-nav>
-    <mat-slide-toggle class="nav-slider">Slide me!</mat-slide-toggle>
     </div>
   </mat-drawer>
   <mat-drawer-content>
     <div class="content" role="main">
       <!-- Main Content -->
       <div class="top-content-boxes">
-        <app-todo-list class="todo-list"></app-todo-list>
         <app-rss-feed class="rss-feed"></app-rss-feed>
-        <div class="weather-map-window">
-          <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=39.232&lon=-71.719&detailLat=42.229&detailLon=-71.700&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=true&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
-        </div>
+        <app-todo-list class="todo-list"></app-todo-list>
       </div>
     </div>
   </mat-drawer-content>
